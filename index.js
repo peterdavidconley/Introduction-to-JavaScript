@@ -158,17 +158,20 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-let rando = Math.random();
+let computer = Math.ceil(Math.random()*3);
 
-/* function game (user, computer){
-  if () {
+// Scissors = 1
+// Paper = 2
+// Rock = 3
+
+function game (user, computer){
+  if (computer === 2 && user === 1 || computer === 3 && user === 2 || computer === 1 && user === 3) {
     return "you win!";
-  } else if () {
-    return "you lose!";
-  } else if () {
+  } else if (computer === user) {
     return "it's a tie."
-  }
-} */
+  } else {
+    return "you lose!";
+} 
 
 
 
@@ -212,13 +215,13 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-/*
+// START of task 6
 function annoyingSong(startNumber){
       for (let i = startNumber; i < 1; i--) {
         return `${startNumber} bottles of soda on the wall, ${startNumber} bottles of soda, take one down pass it around ${startNumber} bottles of soda on the wall`
       }
 }
-*/
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
