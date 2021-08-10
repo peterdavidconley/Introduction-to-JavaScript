@@ -20,6 +20,10 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 18;
+if (votingAge >= 18) {
+console.log("true")
+}
 
 
 /*
@@ -33,8 +37,13 @@ Do the following:
    HINT: no function required
 */
 
+let firstVar = 20;
+let secondVar = 33;
 
-
+if (secondVar > 1) {
+  firstVar = 12;
+}
+console.log(firstVar);
 
 
 /*
@@ -48,7 +57,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let convert = "1999";
+parseInt(convert, 10);
+console.log(convert);
 
 
 /*
@@ -122,10 +133,9 @@ function hungryDog(weight, age, ){
     return weight * 0.04;
   } else if (age < 0.583 && age >= 0.333) {
   return weight * 0.05;
-  }
- else if (age < 0.333) {
+  } else if (age < 0.333) {
   return weight * 0.01;
-}
+  }
 
 
 
