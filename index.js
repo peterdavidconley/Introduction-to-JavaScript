@@ -117,7 +117,7 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(weight, age){
+function hungryDog (weight, age){
   if (age >= 1 && weight <= 5) {
     return weight * 0.05;
   } else if (age >= 1 && weight >= 6 && weight <= 10) {
@@ -158,7 +158,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-let computer = Math.ceil(Math.random()*3);
+/* let computer = Math.ceil(Math.random()*3); */
 
 // Scissors = 1
 // Paper = 2
@@ -170,7 +170,7 @@ function game (user, computer){
   } else if (computer === user) {
     return "it's a tie."
   } else {
-    return "you lose!";
+    return "you lose!"; }
 } 
 
 
