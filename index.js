@@ -131,7 +131,7 @@ function hungryDog (weight, age){
   } else if (age < 0.583 && age >= 0.333) {
   return weight * 0.05;
   } else if (age < 0.333) {
-  return weight * 0.01;
+  return weight * 0.1;
   }
 }
 
@@ -158,19 +158,29 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-/* let computer = Math.ceil(Math.random()*3); */
-
 // Scissors = 1
 // Paper = 2
 // Rock = 3
 
+let computer = Math.ceil(Math.random()*3); 
+
+// As the user select a 1, 2, or 3 as a number
+
 function game (user, computer){
-  if (computer === 2 && user === 1 || computer === 3 && user === 2 || computer === 1 && user === 3) {
+  if (computer === 2 && user === 1)  {
+    return "you win!";
+  } else if (computer === 3 && user === 2) {
+    return "you win!";
+  } else if (computer === 1 && user === 3) {
     return "you win!";
   } else if (computer === user) {
-    return "it's a tie."
-  } else {
+    return "it's a tie"
+  } else if (computer === 1 && user === 2) {
     return "you lose!"; }
+   else if (computer === 2 && user === 3) {
+    return "you lose!"; }
+   else if (computer === 3 && user === 1) {
+  return "you lose!"; }
 } 
 
 
@@ -200,7 +210,7 @@ Using the feet function below do the following:
 */
 
 function feet (cm){
-  return cm * 0.0328084;
+  return cm / 30.48;
 }
 
 
@@ -217,8 +227,8 @@ Using the annoyingSong function below do the following:
 
 
 function annoyingSong(startNumber){
-      for (let i = startNumber; i < 1; i--) {
-        return `${startNumber} bottles of soda on the wall, ${startNumber} bottles of soda, take one down pass it around ${startNumber}-1 bottles of soda on the wall`
+      for (startNumber; startNumber > 0; startNumber--) {
+        return `${startNumber} bottles of soda on the wall, ${startNumber} bottles of soda, take one down pass it around ${startNumber-1} bottles of soda on the wall`
       }
 }
 
