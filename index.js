@@ -215,10 +215,10 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-// START of task 6
+
 function annoyingSong(startNumber){
       for (let i = startNumber; i < 1; i--) {
-        return `${startNumber} bottles of soda on the wall, ${startNumber} bottles of soda, take one down pass it around ${startNumber} bottles of soda on the wall`
+        return `${startNumber} bottles of soda on the wall, ${startNumber} bottles of soda, take one down pass it around ${startNumber}-1 bottles of soda on the wall`
       }
 }
 
